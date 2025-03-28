@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏋️ Fitness Tracker</h1>
+
+        <!-- Warm-Up Exercise Section -->
+        <div class="workout-section">
+            <label for="warmup">🏃 Warm-Up Exercise:</label>
+            <select id="warmup">
+                <option>Running</option>
+                <option>Skipping</option>
+                <option>Swimming</option>
+                <option>Jump Rope</option>
+                <option>Cycling</option>
+                <option>Pull-ups</option>
+                <option>Plank</option>
+                <option>Yoga</option>
+            </select>
+            <button onclick="addWarmup()">➕ Add</button>
+        </div>
+
+        <!-- Selected Warm-Up Exercises Section -->
+        <div class="exercise-section">
+            <h2>🔥 Warm-Up Exercises</h2>
+            <ul id="warmupList"></ul>
+        </div>
+
+        <!-- Workout Selection Section -->
+        <div class="workout-section">
+            <label for="exercise">🏋️ Choose an Exercise:</label>
+            <select id="exercise">
+                <option>Push-ups</option>
+                <option>Squats</option>
+                <option>Bench Press</option>
+                <option>Deadlifts</option>
+                <option>Running</option>
+                <option>Leg Press</option>
+                <option>Biceps Curl</option>
+            </select>
+            
+            <h2>Number of Sets:</h2>
+            <input type="number" id="sets" min="1" max="10" value="3">
+            <button onclick="addExercise()">➕ Add</button>
+        </div>
+
+        <!-- Selected Exercises Section -->
+        <div class="exercise-section">
+            <h2>📋 Core Exercises</h2>
+            <ul id="exerciseList"></ul>
+        </div>
+
+        <!-- Timer Section -->
+        <div class="timer-section">
+            <h2>⏱️ Workout Timer</h2>
+            <p id="timer-display">00:00</p>
+            <button onclick="startTimer()">▶ Start</button>
+            <button onclick="stopTimer()">⏹ Stop</button>
+        </div>
+
+        <!-- Heart Rate Records -->
+        <div class="heart-rate">
+            <h2>💓 Record Your Heart Rate</h2>
+            <input type="number" id="heart-rate" placeholder="Enter BPM">
+            <button onclick="saveHeartRate()">Save</button>
+            <p id="heart-records"></p>
+        </div>
+
+        <!-- BMI Calculator -->
+        <div class="bmi-section">
+            <h2>📊 BMI Calculator</h2>
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="height" placeholder="Height (cm)">
+            <button onclick="calculateBMI()">Calculate</button>
+            <p id="bmi-result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

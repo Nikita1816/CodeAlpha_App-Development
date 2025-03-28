@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ebf840, #d96443);
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(29, 226, 203, 0.696);
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 15px rgba(234, 25, 25, 0.2);
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+/* Warm-up Section */
+.warmup-section {
+    background: #ffe8ec;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Workout Selection Section */
+.workout-section {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Selected Exercises Section */
+.exercise-section {
+    background: #fff;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Buttons */
+button {
+    background: #d40943;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #df809b;
+}
+
+.tick, .delete {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.tick {
+    background: lightgreen;
+}
+
+.delete {
+    background: rgb(253, 132, 132);
+}
+
+/* Timer Section */
+.timer-section {
+    background: #fff;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heart Rate Records */
+.heart-rate {
+    background: #fff;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* BMI Calculator */
+.bmi-section {
+    background: #fff;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+label, input, select {
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Scrollable Exercise List */
+.exercise-list {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fce4ec;
+}
+
+.exercise-list span {
+    background: #ff5f6d;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+}
