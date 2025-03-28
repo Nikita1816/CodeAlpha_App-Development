@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffd6d6;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background-color: #ff6b81;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.flashcard {
+    background-color: #ffebeb;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffcccb;
+    transition: 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #ff9999;
+    transform: scale(1.05);
+}
+
+.correct {
+    background-color: #4caf50 !important;
+    color: white;
+}
+
+.wrong {
+    background-color: #f44336 !important;
+    color: white;
+}
